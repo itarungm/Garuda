@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://garuda.vercel.app'
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://garuda-itarungm.vercel.app'
 
 export const metadata: Metadata = {
   title: "Garuda – Your Journey, Elevated",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Tarun", url: "https://github.com/itarungm" }],
   creator: "iTarunGM",
-  metadataBase: new URL(APP_URL),
+  metadataBase: new URL('https://garuda-itarungm.vercel.app'),
 };
 
 export const viewport: Viewport = {
