@@ -1,0 +1,33 @@
+{
+  "name": "Garuda – Trip Companion",
+  "short_name": "Garuda",
+  "description": "Your ultimate trip companion. Plan, track, and experience together.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#0d2b1d",
+  "theme_color": "#1a4731",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["travel", "lifestyle", "navigation"],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Home",
+      "url": "/dashboard",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

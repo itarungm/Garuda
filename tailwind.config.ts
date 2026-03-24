@@ -11,6 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        garuda: {
+          green: "#1a4731",
+          dark: "#0d2b1d",
+          amber: "#d97706",
+          light: "#f0fdf4",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
