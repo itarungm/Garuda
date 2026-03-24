@@ -91,7 +91,7 @@ export default function OGImage() {
           textTransform: 'uppercase',
           display: 'flex',
         }}>
-          Plan together · Travel better
+          Plan together · Travel better · by iTarunGM
         </div>
       </div>
     ),

@@ -42,7 +42,11 @@ export const metadata: Metadata = {
     title: "Garuda – Your Journey, Elevated",
     description: "The ultimate trip companion. Plan routes, split expenses, track memories, and stay connected with your crew — all in one place.",
     images: [`${APP_URL}/opengraph-image`],
+    creator: "@iTarunGM",
   },
+  authors: [{ name: "Tarun", url: "https://github.com/itarungm" }],
+  creator: "iTarunGM",
+  metadataBase: new URL(APP_URL),
 };
 
 export const viewport: Viewport = {
