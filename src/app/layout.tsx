@@ -5,9 +5,11 @@ import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://garuda.vercel.app'
+
 export const metadata: Metadata = {
   title: "Garuda – Your Journey, Elevated",
-  description: "The ultimate trip companion app. Plan, track, and experience your adventures together.",
+  description: "The ultimate trip companion. Plan routes, split expenses, track memories, and stay connected with your crew — all in one place.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -17,6 +19,29 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icons/icon-192.png",
     apple: "/icons/icon-192.png",
+  },
+  // Open Graph — WhatsApp, Facebook, iMessage, Slack, LinkedIn
+  openGraph: {
+    type: "website",
+    url: APP_URL,
+    siteName: "Garuda",
+    title: "Garuda – Your Journey, Elevated",
+    description: "The ultimate trip companion. Plan routes, split expenses, track memories, and stay connected with your crew — all in one place.",
+    images: [
+      {
+        url: `${APP_URL}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: "Garuda – Trip Companion",
+      },
+    ],
+  },
+  // Twitter / X card
+  twitter: {
+    card: "summary_large_image",
+    title: "Garuda – Your Journey, Elevated",
+    description: "The ultimate trip companion. Plan routes, split expenses, track memories, and stay connected with your crew — all in one place.",
+    images: [`${APP_URL}/opengraph-image`],
   },
 };
 
